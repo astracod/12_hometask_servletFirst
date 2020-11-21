@@ -1,0 +1,28 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+    <servlet>
+        <servlet-name>contactBookServlet</servlet-name>
+        <servlet-class>org.example.servletfirst.ContactBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>searchInContactBookServlet</servlet-name>
+        <servlet-class>org.example.servletfirst.SearchInContactBookServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>removeFromContactBookServlet</servlet-name>
+        <servlet-class>org.example.servletfirst.RemoveFromContactBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>removeFromContactBookServlet</servlet-name>
+        <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>searchInContactBookServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>contactBookServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+</web-app>
+
